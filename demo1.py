@@ -8,4 +8,4 @@ else:
 
 
 name = "zhang"
-print name
+print(name)
