@@ -33,9 +33,8 @@ html = r.text
 
     soup = BeautifulSoup(html, "html.parser")
 
-for dlin soup.find_all('dl'):
-
-text = dl.prettify()
+for dlin in soup.find_all('dl'):
+    text = dl.prettify()
 
         search_url = dl.get('data-track-view')
 
@@ -64,8 +63,3 @@ print(search, tittle)
 #exit()
 
 # print(search)
-
-作者：MySuperHero
-链接：https://www.jianshu.com/p/757d8981fdda
-来源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
